@@ -27,6 +27,7 @@ namespace GestionCobroEstacionamiento.Clases
         public override float CalcularTarifa()
         {
             return this.horasEstancia * 15.00f;
+
         }
     }
 }
