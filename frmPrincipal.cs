@@ -18,8 +18,26 @@ namespace GestionCobroEstacionamiento
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
-        {
+        {           
+            int horas = int.Parse(nupHorasEstancia.Text.Trim());
 
+         
+            string tipo = comboBox1.SelectedItem.ToString();
+
+            //alexa cambios: CREAR VARIABLE PARA GUARDAR EL VEHÍCULO
+
+            switch (horas)
+            {
+                case 0:
+                    //general                   
+                    break;
+                case 1:
+                    //adulto mayor                   
+                    break;
+                case 2:
+                    //estudiante alexa                    
+                    break;
+            }
         }
     }
 }
