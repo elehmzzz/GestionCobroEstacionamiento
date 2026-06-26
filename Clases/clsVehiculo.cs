@@ -12,7 +12,7 @@ namespace GestionCobroEstacionamiento.Clases
         protected int horasEstancia;
 
         //constructor
-        clsVehiculo(int horasEstancia) {
+        public clsVehiculo(int horasEstancia) {
             this.horasEstancia = horasEstancia;
         }
         public abstract float CalcularTarifa();
