@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GestionCobroEstacionamiento.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,7 @@ namespace GestionCobroEstacionamiento
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
