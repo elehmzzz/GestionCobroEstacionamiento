@@ -20,7 +20,23 @@ namespace GestionCobroEstacionamiento
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-           
+            int horas = int.Parse(nupHorasEstancia.Text.Trim());
+
+
+            string tipo = comboBox1.SelectedItem.ToString();
+
+            switch (horas)
+            {
+                case 0:
+                    //general                   
+                    break;
+                case 1:
+                    //adulto mayor                   
+                    break;
+                case 2:
+                    //estudiante alexa                    
+                    break;
+            }
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
