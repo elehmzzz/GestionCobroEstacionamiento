@@ -24,8 +24,6 @@ namespace GestionCobroEstacionamiento
          
             string tipo = comboBox1.SelectedItem.ToString();
 
-            //alexa cambios: CREAR VARIABLE PARA GUARDAR EL VEHÍCULO
-
             switch (horas)
             {
                 case 0:
