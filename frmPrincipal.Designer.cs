@@ -37,6 +37,7 @@
             this.nupHorasEstancia = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.lblTotalPagar = new System.Windows.Forms.Label();
+            this.btnCalcular = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nupHorasEstancia)).BeginInit();
             this.SuspendLayout();
@@ -67,6 +68,7 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.btnCalcular);
             this.panel1.Controls.Add(this.lblTotalPagar);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.nupHorasEstancia);
@@ -78,7 +80,7 @@
             this.panel1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(776, 366);
+            this.panel1.Size = new System.Drawing.Size(484, 366);
             this.panel1.TabIndex = 2;
             // 
             // label2
@@ -133,11 +135,21 @@
             this.lblTotalPagar.TabIndex = 7;
             this.lblTotalPagar.Text = "0";
             // 
+            // btnCalcular
+            // 
+            this.btnCalcular.Location = new System.Drawing.Point(283, 295);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(126, 31);
+            this.btnCalcular.TabIndex = 8;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 400);
+            this.ClientSize = new System.Drawing.Size(508, 400);
             this.Controls.Add(this.panel1);
             this.Name = "frmPrincipal";
             this.Text = "Sistema de Gestion de Cobro";
@@ -159,6 +171,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblTotalPagar;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnCalcular;
     }
 }
 
