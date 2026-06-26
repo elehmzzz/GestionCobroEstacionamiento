@@ -31,13 +31,13 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblTarifa = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.nupHorasEstancia = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblTotalPagar = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
+            this.lblTotalPagar = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.nupHorasEstancia = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblTarifa = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nupHorasEstancia)).BeginInit();
             this.SuspendLayout();
@@ -82,58 +82,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(484, 366);
             this.panel1.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(278, 46);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Tarifa:";
-            // 
-            // lblTarifa
-            // 
-            this.lblTarifa.AutoSize = true;
-            this.lblTarifa.Location = new System.Drawing.Point(348, 46);
-            this.lblTarifa.Name = "lblTarifa";
-            this.lblTarifa.Size = new System.Drawing.Size(23, 25);
-            this.lblTarifa.TabIndex = 3;
-            this.lblTarifa.Text = "0";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(43, 174);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(169, 25);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Horas de estancia:";
-            // 
-            // nupHorasEstancia
-            // 
-            this.nupHorasEstancia.Location = new System.Drawing.Point(48, 211);
-            this.nupHorasEstancia.Name = "nupHorasEstancia";
-            this.nupHorasEstancia.Size = new System.Drawing.Size(120, 33);
-            this.nupHorasEstancia.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(43, 293);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 25);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Total a pagar:";
-            // 
-            // lblTotalPagar
-            // 
-            this.lblTotalPagar.AutoSize = true;
-            this.lblTotalPagar.Location = new System.Drawing.Point(189, 293);
-            this.lblTotalPagar.Name = "lblTotalPagar";
-            this.lblTotalPagar.Size = new System.Drawing.Size(23, 25);
-            this.lblTotalPagar.TabIndex = 7;
-            this.lblTotalPagar.Text = "0";
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnCalcular
             // 
@@ -144,6 +93,58 @@
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
+            // lblTotalPagar
+            // 
+            this.lblTotalPagar.AutoSize = true;
+            this.lblTotalPagar.Location = new System.Drawing.Point(189, 293);
+            this.lblTotalPagar.Name = "lblTotalPagar";
+            this.lblTotalPagar.Size = new System.Drawing.Size(23, 25);
+            this.lblTotalPagar.TabIndex = 7;
+            this.lblTotalPagar.Text = "0";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(43, 293);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(131, 25);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Total a pagar:";
+            // 
+            // nupHorasEstancia
+            // 
+            this.nupHorasEstancia.Location = new System.Drawing.Point(48, 211);
+            this.nupHorasEstancia.Name = "nupHorasEstancia";
+            this.nupHorasEstancia.Size = new System.Drawing.Size(120, 33);
+            this.nupHorasEstancia.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(43, 174);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(169, 25);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Horas de estancia:";
+            // 
+            // lblTarifa
+            // 
+            this.lblTarifa.AutoSize = true;
+            this.lblTarifa.Location = new System.Drawing.Point(348, 46);
+            this.lblTarifa.Name = "lblTarifa";
+            this.lblTarifa.Size = new System.Drawing.Size(23, 25);
+            this.lblTarifa.TabIndex = 3;
+            this.lblTarifa.Text = "0";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(278, 46);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 25);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Tarifa:";
             // 
             // frmPrincipal
             // 
